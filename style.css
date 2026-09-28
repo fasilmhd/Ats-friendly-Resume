@@ -1,0 +1,270 @@
+
+/* =========================================
+   ATS-FRIENDLY RESUME
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   RESUME CONTAINER
+   ========================================= */
+
+.resume {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+    padding: 35px 45px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 26pt;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #000000;
+
+    text-transform: uppercase;
+}
+
+.job-title {
+    margin: 5px 0 8px;
+
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.contact {
+    margin: 3px 0;
+
+    font-size: 10pt;
+}
+
+.contact a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+section {
+    margin-top: 15px;
+}
+
+section h2 {
+    margin: 0 0 7px;
+
+    padding-bottom: 3px;
+
+    border-bottom: 1.5px solid #000000;
+
+    font-size: 13pt;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+   ========================================= */
+
+p {
+    margin: 4px 0;
+}
+
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.skill-group {
+    margin-bottom: 5px;
+}
+
+.skill-group strong {
+    font-weight: 700;
+}
+
+
+/* =========================================
+   EXPERIENCE / PROJECTS / EDUCATION
+   ========================================= */
+
+.entry {
+    margin-bottom: 12px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    gap: 20px;
+}
+
+.entry-header h3,
+.entry h3 {
+    margin: 0;
+
+    font-size: 11.5pt;
+    font-weight: 700;
+}
+
+.entry-header span {
+    white-space: nowrap;
+
+    font-size: 10pt;
+    font-weight: 400;
+}
+
+.organization {
+    margin-top: 2px;
+
+    font-size: 10.5pt;
+    font-style: italic;
+}
+
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+ul {
+    margin: 5px 0 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+
+/* =========================================
+   PROJECT TECHNOLOGIES
+   ========================================= */
+
+.entry p strong {
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CERTIFICATIONS
+   ========================================= */
+
+.date {
+    font-size: 10pt;
+}
+
+
+/* =========================================
+   ADDITIONAL INFORMATION
+   ========================================= */
+
+.personal-details p {
+    margin: 3px 0;
+}
+
+
+/* =========================================
+   PRINT / PDF
+   ========================================= */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0.55in;
+    }
+
+    body {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .resume {
+        max-width: none;
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    .entry {
+        break-inside: avoid;
+    }
+
+    h2,
+    h3 {
+        break-after: avoid;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .resume {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 22pt;
+    }
+
+    .entry-header {
+        display: block;
+    }
+
+    .entry-header span {
+        display: block;
+        margin-top: 2px;
+    }
+}
+
