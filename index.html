@@ -1,641 +1,272 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fasil Muhammed — Network Administrator Resume</title>
-  <meta name="description" content="Resume of Fasil Muhammed, Computer Science graduate seeking an entry-level Network Administrator role.">
-  <meta name="author" content="Fasil Muhammed">
-  <meta name="keywords" content="Network Administrator, TCP/IP, Wireshark, IDS/IPS, Network Security, Ethical Hacking, Computer Science">
-  <meta name="robots" content="noindex">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-/* ==========================================================
-   TOKENS
-   ========================================================== */
-:root {
-  --navy: #0b2545;
-  --steel: #1d4e77;
-  --accent: #2e86ab;
-  --accent-light: #e4f0f6;
-  --bg: #f7f9fb;
-  --surface: #ffffff;
-  --text: #1f2937;
-  --muted: #5b6b79;
-  --line: #d9e2ec;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  --font-display: "Sora", system-ui, sans-serif;
-  --font-body: "Sora", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    <title>Fasil Muhammed - Resume</title>
 
-  --max-width: 780px;
-}
+    <meta name="description"
+          content="Resume of Fasil Muhammed - Network Administrator and IT & Cybersecurity Support">
 
-/* ==========================================================
-   RESET
-   ========================================================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-body);
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.55;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3 {
-  font-family: var(--font-display);
-  color: var(--navy);
-}
-
-a {
-  color: var(--steel);
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-}
-
-ul {
-  list-style: none;
-}
-
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: 0;
-  background: var(--navy);
-  color: #fff;
-  padding: 0.6rem 1rem;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  left: 1rem;
-  top: 1rem;
-}
-
-/* ==========================================================
-   HEADER
-   ========================================================== */
-.resume-header {
-  background: var(--navy);
-  background-image:
-    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
-  background-size: 26px 26px;
-  color: #fff;
-  padding: 3rem 1.5rem 2.4rem;
-}
-
-.header-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.6rem;
-}
-
-.resume-header h1 {
-  font-size: clamp(2.1rem, 5vw, 2.9rem);
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.01em;
-}
-
-.role-title {
-  margin-top: 0.35rem;
-  font-size: 1.05rem;
-  color: #cfe0ec;
-  font-weight: 500;
-}
-
-.contact-bar {
-  margin-top: 1.6rem;
-  font-style: normal;
-}
-
-.contact-bar ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.4rem;
-}
-
-.contact-bar li {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.92rem;
-}
-
-.contact-bar a,
-.contact-bar span:not(.tag-label) {
-  color: #eaf2f8;
-  text-decoration: none;
-}
-
-.contact-bar a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-}
-
-.tag-label {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  color: var(--accent);
-  background: rgba(46, 134, 171, 0.18);
-  border: 1px solid rgba(46, 134, 171, 0.4);
-  border-radius: 3px;
-  padding: 0.12rem 0.4rem;
-  text-transform: lowercase;
-  letter-spacing: 0.03em;
-}
-
-/* ==========================================================
-   MAIN / SECTIONS
-   ========================================================== */
-main {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 2.4rem 1.5rem 1rem;
-}
-
-.resume-section {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
-  border-radius: 6px;
-  padding: 1.8rem 1.8rem;
-  margin-bottom: 1.4rem;
-}
-
-.resume-section--compact {
-  padding: 1.2rem 1.8rem;
-}
-
-.resume-section h2 {
-  display: flex;
-  align-items: baseline;
-  gap: 0.65rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.section-index {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--accent);
-  font-weight: 500;
-}
-
-.summary-text {
-  color: var(--text);
-  max-width: 62ch;
-}
-
-/* ==========================================================
-   SKILLS
-   ========================================================== */
-.skill-group + .skill-group {
-  margin-top: 1.2rem;
-}
-
-.skill-group h3 {
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--muted);
-  margin-bottom: 0.65rem;
-  font-weight: 600;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.skill-tags li {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  background: var(--accent-light);
-  color: var(--steel);
-  border: 1px solid rgba(46, 134, 171, 0.3);
-  border-radius: 4px;
-  padding: 0.32rem 0.6rem;
-}
-
-/* ==========================================================
-   TIMELINE (experience / education)
-   ========================================================== */
-.timeline {
-  position: relative;
-  padding-left: 1.6rem;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 6px;
-  bottom: 6px;
-  width: 2px;
-  background: var(--line);
-}
-
-.timeline-item {
-  position: relative;
-  padding-bottom: 1.5rem;
-}
-
-.timeline-item:last-child {
-  padding-bottom: 0;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -1.6rem;
-  top: 0.35rem;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--surface);
-  box-shadow: 0 0 0 2px var(--accent);
-}
-
-.timeline-header h3 {
-  font-size: 1.02rem;
-  font-weight: 700;
-}
-
-.timeline-org {
-  color: var(--steel);
-  font-size: 0.92rem;
-  font-weight: 500;
-  margin-top: 0.15rem;
-}
-
-.timeline-date {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--muted);
-  margin-top: 0.2rem;
-}
-
-.timeline-date-inline {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-.timeline-item ul {
-  margin-top: 0.6rem;
-  padding-left: 1.1rem;
-}
-
-.timeline-item li {
-  list-style: disc;
-  margin-bottom: 0.3rem;
-  color: var(--text);
-}
-
-/* ==========================================================
-   PROJECTS
-   ========================================================== */
-.project-card h3 {
-  font-size: 1.02rem;
-  font-weight: 700;
-  margin-bottom: 0.6rem;
-}
-
-.project-card ul {
-  padding-left: 1.1rem;
-}
-
-.project-card li {
-  list-style: disc;
-  margin-bottom: 0.3rem;
-}
-
-.tool-line {
-  margin-top: 0.8rem;
-  font-size: 0.88rem;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* ==========================================================
-   PLAIN LISTS
-   ========================================================== */
-.plain-list li {
-  padding: 0.35rem 0;
-  border-bottom: 1px dashed var(--line);
-}
-
-.plain-list li:last-child {
-  border-bottom: none;
-}
-
-.detail-line {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.4rem;
-  font-size: 0.9rem;
-}
-
-.detail-line li {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-/* ==========================================================
-   FOOTER
-   ========================================================== */
-.resume-footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 1rem 1.5rem 2.5rem;
-  text-align: center;
-  font-size: 0.78rem;
-  color: var(--muted);
-  font-family: var(--font-mono);
-}
-
-/* ==========================================================
-   PRINT / ATS-FRIENDLY EXPORT
-   ========================================================== */
-@media print {
-  body {
-    background: #fff;
-  }
-  .resume-header {
-    background: var(--navy) !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  .resume-section {
-    break-inside: avoid;
-    box-shadow: none;
-  }
-}
-
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
-@media (max-width: 560px) {
-  .resume-header {
-    padding: 2.2rem 1.1rem 1.8rem;
-  }
-  main {
-    padding: 1.8rem 1.1rem 1rem;
-  }
-  .resume-section {
-    padding: 1.4rem 1.2rem;
-  }
-  .contact-bar ul {
-    gap: 0.5rem 1rem;
-  }
-}
-
-/* ==========================================================
-   REDUCED MOTION
-   ========================================================== */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <a class="skip-link" href="#main-content">Skip to resume content</a>
-  <header class="resume-header" itemscope itemtype="https://schema.org/Person">
-    <div class="header-inner">
-      <p class="eyebrow">Resume</p>
-      <h1 itemprop="name">Fasil Muhammed</h1>
-      <p class="role-title" itemprop="jobTitle">Network Administrator&nbsp;/&nbsp;IT &amp; Cybersecurity Support</p>
+<div class="resume">
 
-      <address itemprop="address" class="contact-bar">
-        <ul>
-          <li>
-            <span class="tag-label">tel</span>
-            <a href="tel:+919778790256" itemprop="telephone">+91&nbsp;97787&nbsp;90256</a>
-          </li>
-          <li>
-            <span class="tag-label">mail</span>
-            <a href="mailto:fasilmuhammed101@gmail.com" itemprop="email">fasilmuhammed101@gmail.com</a>
-          </li>
-          <li>
-            <span class="tag-label">web</span>
-            <a href="https://www.linkedin.com/in/fasilmuhammed-a2214029b" itemprop="sameAs" target="_blank" rel="noopener noreferrer">linkedin.com/in/fasilmuhammed-a2214029b</a>
-          </li>
-          <li>
-            <span class="tag-label">git</span>
-            <a href="https://github.com/fasilmhd" itemprop="sameAs" target="_blank" rel="noopener noreferrer">github.com/fasilmhd</a>
-          </li>
-          <li>
-            <span class="tag-label">loc</span>
-            <span itemprop="homeLocation">Kollam, Kerala, India</span>
-          </li>
-        </ul>
-      </address>
-    </div>
-  </header>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Fasil Muhammed</h1>
 
-  <main id="main-content">
-    <section id="summary" class="resume-section" aria-labelledby="summary-heading">
-      <h2 id="summary-heading"><span class="section-index">◆</span>Career Objective</h2>
-      <p class="summary-text">
-        Computer Science undergraduate with a strong foundation in <strong>networking, TCP/IP protocols, and ethical hacking</strong>.
-        Built a Python-based IDS/IPS system for live network traffic capture, packet inspection, and automated threat
-        prevention, and completed a cyber forensics internship at CDAC. Seeking an entry-level
-        <strong>Network Administrator</strong> role where I can apply hands-on experience in network monitoring,
-        traffic analysis, and system security to help maintain reliable, secure infrastructure.
-      </p>
+        <p class="job-title">
+            Network Administrator | IT &amp; Cybersecurity Support
+        </p>
+
+        <p class="contact">
+            Kollam, Kerala, India |
+            +91 97787 90256 |
+            <a href="mailto:fasilmuhammed101@gmail.com">
+                fasilmuhammed101@gmail.com
+            </a>
+        </p>
+
+        <p class="contact">
+            <a href="https://www.linkedin.com/in/fasilmuhammed-a2214029b">
+                linkedin.com/in/fasilmuhammed-a2214029b
+            </a>
+            |
+            <a href="https://github.com/fasilmhd">
+                github.com/fasilmhd
+            </a>
+        </p>
+    </header>
+
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+        <h2>Professional Summary</h2>
+
+        <p>
+            Computer Science graduate with a strong foundation in networking,
+            TCP/IP protocols, network traffic analysis, and cybersecurity.
+            Hands-on experience developing a Python-based IDS/IPS system for
+            live network traffic capture, packet inspection, threat detection,
+            and automated prevention. Completed a Cyber Forensics internship
+            at CDAC. Seeking an entry-level opportunity in network
+            administration, IT support, or cybersecurity.
+        </p>
     </section>
-    <section id="skills" class="resume-section" aria-labelledby="skills-heading">
-      <h2 id="skills-heading"><span class="section-index">◆</span>Core Skills</h2>
 
-      <div class="skill-group">
-        <h3>Networking &amp; Security</h3>
-        <ul class="skill-tags">
-          <li>TCP/IP Protocol Suite</li>
-          <li>LAN / WAN Fundamentals</li>
-          <li>Network Traffic Analysis</li>
-          <li>Wireshark</li>
-          <li>IDS / IPS Concepts</li>
-          <li>Intrusion &amp; Threat Detection</li>
-          <li>Firewall Fundamentals</li>
-          <li>Network Monitoring</li>
-          <li>Ethical Hacking</li>
-          <li>Network Troubleshooting</li>
-        </ul>
-      </div>
 
-      <div class="skill-group">
-        <h3>Systems &amp; Tools</h3>
-        <ul class="skill-tags">
-          <li>Python (Network Scripting)</li>
-          <li>Linux Fundamentals</li>
-          <li>Cyber Forensics Basics</li>
-          <li>Digital Evidence Handling</li>
-          <li>Technical Documentation</li>
-        </ul>
-      </div>
+    <!-- TECHNICAL SKILLS -->
+    <section>
+        <h2>Technical Skills</h2>
 
-      <div class="skill-group">
-        <h3>Soft Skills</h3>
-        <ul class="skill-tags">
-          <li>Leadership</li>
-          <li>Team Management</li>
-          <li>Complex Problem-Solving</li>
-          <li>Communication</li>
-          <li>Adaptability</li>
-          <li>Time Management</li>
-        </ul>
-      </div>
+        <div class="skill-group">
+            <strong>Networking:</strong>
+            TCP/IP Protocol Suite, LAN/WAN Fundamentals,
+            Network Traffic Analysis, Network Monitoring,
+            Network Troubleshooting
+        </div>
 
-      <div class="skill-group">
-        <h3>Languages Known</h3>
-        <ul class="skill-tags">
-          <li>English</li>
-          <li>Hindi</li>
-          <li>Malayalam (Mother Tongue)</li>
-        </ul>
-      </div>
+        <div class="skill-group">
+            <strong>Cybersecurity:</strong>
+            IDS/IPS Concepts, Intrusion and Threat Detection,
+            Firewall Fundamentals, Ethical Hacking,
+            Cyber Forensics
+        </div>
+
+        <div class="skill-group">
+            <strong>Tools and Technologies:</strong>
+            Python, Wireshark, Linux Fundamentals,
+            Digital Evidence Handling, Technical Documentation
+        </div>
+
+        <div class="skill-group">
+            <strong>Soft Skills:</strong>
+            Leadership, Team Management, Complex Problem-Solving,
+            Communication, Adaptability, Time Management
+        </div>
+
+        <div class="skill-group">
+            <strong>Languages:</strong>
+            English, Hindi, Malayalam
+        </div>
     </section>
-    <section id="experience" class="resume-section" aria-labelledby="experience-heading">
-      <h2 id="experience-heading"><span class="section-index">◆</span>Experience</h2>
 
-      <ul class="timeline">
-        <li class="timeline-item">
-          <article itemscope itemtype="https://schema.org/OrganizationRole">
-            <header class="timeline-header">
-              <h3 itemprop="roleName">Cyber Forensics Intern</h3>
-              <p class="timeline-org" itemprop="name">CDAC — Centre for Development of Advanced Computing</p>
-              <p class="timeline-date"><time datetime="P1M">Duration: 1 Month</time></p>
-            </header>
+
+    <!-- EXPERIENCE -->
+    <section>
+        <h2>Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <h3>Cyber Forensics Intern</h3>
+                <span>1 Month</span>
+            </div>
+
+            <p class="organization">
+                CDAC – Centre for Development of Advanced Computing
+            </p>
+
             <ul>
-              <li>Gained hands-on exposure to cyber forensics concepts and basic digital investigation techniques.</li>
-              <li>Assisted in digital evidence handling and standard cybersecurity workflows.</li>
+                <li>
+                    Gained hands-on exposure to cyber forensics concepts
+                    and basic digital investigation techniques.
+                </li>
+
+                <li>
+                    Assisted in digital evidence handling and standard
+                    cybersecurity workflows.
+                </li>
             </ul>
-          </article>
-        </li>
-      </ul>
+        </div>
     </section>
-    <section id="projects" class="resume-section" aria-labelledby="projects-heading">
-      <h2 id="projects-heading"><span class="section-index">◆</span>Projects</h2>
 
-      <article class="project-card">
-        <h3>Python-Based IDS/IPS — Network Traffic Monitor</h3>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>Projects</h2>
+
+        <div class="entry">
+            <h3>Python-Based IDS/IPS – Network Traffic Monitor</h3>
+
+            <ul>
+                <li>
+                    Developed a Python-based Intrusion Detection and
+                    Prevention System for live network traffic capture
+                    and analysis.
+                </li>
+
+                <li>
+                    Implemented threat detection, alerting, and automated
+                    prevention features.
+                </li>
+
+                <li>
+                    Performed packet inspection and suspicious-activity
+                    monitoring using TCP/IP protocols.
+                </li>
+            </ul>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Computer Networks, Wireshark
+            </p>
+        </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <h3>Master of Computer Applications (MCA)</h3>
+                <span>2026 – 2028</span>
+            </div>
+
+            <p class="organization">
+                College of Engineering, Trivandrum –
+                Kalam Technological University
+            </p>
+        </div>
+
+
+        <div class="entry">
+            <div class="entry-header">
+                <h3>B.Sc. Computer Science</h3>
+                <span>2023 – 2026</span>
+            </div>
+
+            <p class="organization">
+                Government College Kariavattom – Kerala University
+            </p>
+        </div>
+
+
+        <div class="entry">
+            <div class="entry-header">
+                <h3>Higher Secondary Education (XII)</h3>
+                <span>2021 – 2023</span>
+            </div>
+
+            <p class="organization">
+                State HSE Board – 92.75%
+            </p>
+        </div>
+
+
+        <div class="entry">
+            <div class="entry-header">
+                <h3>Secondary Education (X)</h3>
+                <span>2020 – 2021</span>
+            </div>
+
+            <p class="organization">
+                State Board – 80%
+            </p>
+        </div>
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2>Certifications</h2>
+
         <ul>
-          <li>Developed a Python-based Intrusion Detection / Prevention System for live network traffic capture and analysis.</li>
-          <li>Implemented threat detection, alerting, and automated prevention features.</li>
-          <li>Performed packet inspection and suspicious-activity monitoring using TCP/IP protocols.</li>
+            <li>
+                <strong>Ethical Hacking</strong> – NPTEL
+                <span class="date">(Jul – Oct 2024)</span>
+            </li>
+
+            <li>
+                <strong>Diploma in Computer Application</strong>
+                <span class="date">(Oct 2023)</span>
+            </li>
         </ul>
-        <p class="tool-line"><span class="tag-label">stack</span> Python &middot; Computer Networks &middot; Wireshark</p>
-      </article>
-    </section>
-    <section id="leadership" class="resume-section" aria-labelledby="leadership-heading">
-      <h2 id="leadership-heading"><span class="section-index">◆</span>Leadership &amp; Activities</h2>
-      <ul class="plain-list">
-        <li><strong>National Service Scheme (NSS)</strong> — Group Leader</li>
-        <li><strong>Free and Open Source Software (FOSS)</strong> — Ambassador</li>
-      </ul>
-    </section>
-    <section id="education" class="resume-section" aria-labelledby="education-heading">
-      <h2 id="education-heading"><span class="section-index">◆</span>Education</h2>
-
-      <ul class="timeline">
-        <li class="timeline-item">
-          <article>
-            <header class="timeline-header">
-              <h3>Master of Computer Applications (MCA)</h3>
-              <p class="timeline-org">College of Engineering, Trivandrum — Kalam Technological University</p>
-              <p class="timeline-date"><time datetime="2026/2028">2026 – 2028</time></p>
-            </header>
-          </article>
-        </li>
-        <li class="timeline-item">
-          <article>
-            <header class="timeline-header">
-              <h3>B.Sc. Computer Science</h3>
-              <p class="timeline-org">Government College Kariavattom — Kerala University</p>
-              <p class="timeline-date"><time datetime="2023/2026">2023 – 2026</time></p>
-            </header>
-          </article>
-        </li>
-        <li class="timeline-item">
-          <article>
-            <header class="timeline-header">
-              <h3>Higher Secondary Education (XII)</h3>
-              <p class="timeline-org">State HSE Board — 92.75%</p>
-              <p class="timeline-date"><time datetime="2021/2023">2021 – 2023</time></p>
-            </header>
-          </article>
-        </li>
-        <li class="timeline-item">
-          <article>
-            <header class="timeline-header">
-              <h3>Secondary Education (X)</h3>
-              <p class="timeline-org">State Board — 80%</p>
-              <p class="timeline-date"><time datetime="2020/2021">2020 – 2021</time></p>
-            </header>
-          </article>
-        </li>
-      </ul>
-    </section>
-    <section id="certifications" class="resume-section" aria-labelledby="certifications-heading">
-      <h2 id="certifications-heading"><span class="section-index">◆</span>Certifications</h2>
-      <ul class="plain-list">
-        <li><strong>Ethical Hacking</strong> — NPTEL <span class="timeline-date-inline">(Jul – Oct 2024)</span></li>
-        <li><strong>Diploma in Computer Application</strong> <span class="timeline-date-inline">(Oct 2023)</span></li>
-      </ul>
-    </section>
-    <section id="personal-details" class="resume-section resume-section--compact" aria-labelledby="personal-heading">
-      <h2 id="personal-heading"><span class="section-index">◆</span>Personal Details</h2>
-      <ul class="detail-line">
-        <li><span class="tag-label">dob</span> 17 Feb 2005</li>
-        <li><span class="tag-label">gender</span> Male</li>
-        <li><span class="tag-label">location</span> Kollam, Kerala, India</li>
-      </ul>
     </section>
 
-  </main>
 
-  <footer class="resume-footer">
-    <p>Fasil Muhammed &middot; Network Administrator Resume &middot; Last updated <time datetime="2026-08-28">August 2026</time></p>
-  </footer>
+    <!-- LEADERSHIP -->
+    <section>
+        <h2>Leadership and Activities</h2>
+
+        <ul>
+            <li>
+                <strong>National Service Scheme (NSS)</strong> –
+                Group Leader
+            </li>
+
+            <li>
+                <strong>Free and Open Source Software (FOSS)</strong> –
+                Ambassador
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- PERSONAL DETAILS -->
+    <section class="personal-details">
+        <h2>Additional Information</h2>
+
+        <p>
+            <strong>Location:</strong>
+            Kollam, Kerala, India
+        </p>
+
+        <p>
+            <strong>Languages:</strong>
+            English, Hindi, Malayalam
+        </p>
+    </section>
+
+</div>
 
 </body>
 </html>
+
